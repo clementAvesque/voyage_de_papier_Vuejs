@@ -1,4 +1,5 @@
 <template>
+    <nav class="nav-footer">
     <nav class="footer">
         <div class="assistances">
             <h1><a href="#" class="hover:underline">Assistance</a></h1>
@@ -12,6 +13,10 @@
         <div class="logo">
             <img src="/img/logo.svg" alt="Logo" class="logo w-10 h-10" />
         </div>
+    
+    </nav>            
+    <p>VoyageDePapier.Com 2025 - Mentions légales - Conditions générales de vente - Politique de confidentialité</p>
+        
     </nav>
   </template>
   
@@ -22,9 +27,16 @@
   </script>
   
   <style scoped>
+    .nav-footer{
+        background-color: #421318;
+        color: white;
 
+
+    }
+    .nav-footer p{
+        text-align: center;
+    }
   .footer {
-    background-color: #421318;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,19 +49,15 @@
     
   }
   
-  .header-nav a {
+  .footer a {
     text-decoration: none;
     transition: text-decoration 0.3s ease;
   }
   
-  .header-nav a:hover {
+  .footer a:hover {
     text-decoration: underline;
   }
 
-  .panier {
-    width: 2.5rem; 
-    height: 2.5rem;
-  }
   body, html {
   margin: 0;
   padding: 0;
