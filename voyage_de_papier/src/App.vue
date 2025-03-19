@@ -1,14 +1,21 @@
+<script setup>
+import Header from './components/Header.vue'; 
+import Footer from './components/Footer.vue';
+</script>
+
 <template>
-  <div>
-    <Header/>
-    <router-view></router-view> 
-  </div>
+  <Header />
+  <router-view></router-view> 
+  <Footer />
 </template>
 
-<script>
+<style scoped>
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
-import Header from './components/Header.vue';
-export default {
-  name: 'App',
-};
-</script>
+
+
+</style>
