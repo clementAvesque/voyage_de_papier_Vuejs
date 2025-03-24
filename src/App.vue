@@ -1,11 +1,15 @@
 <script setup>
 import Header from './components/header.vue';
 import Footer from './components/footer.vue';
+import Game from './components/game.vue';
+
 </script>
 
 <template>
   <Header />
   <router-view></router-view> 
+  <Game />
+
   <Footer />
 </template>
 
